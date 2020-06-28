@@ -1,7 +1,8 @@
 import * as React from "react";
-import { render } from "react-dom";
+import { unstable_createRoot as createRoot } from "react-dom";
 
 import App from "./App";
 
 const rootElement = document.getElementById("root");
-render(<App />, rootElement);
+const root = createRoot(rootElement);
+root.render(<App />);
