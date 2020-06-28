@@ -17,7 +17,12 @@ export default function FileForm({ file, onChange }: Props) {
   return (
     <label>
       Click to select some files...
-      <input style={{ display: "none" }} type="file" onChange={handleChange} />
+      <input
+        style={{ display: "none" }}
+        type="file"
+        onChange={handleChange}
+        accept="image/*"
+      />
     </label>
   );
 }
