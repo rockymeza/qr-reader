@@ -7,9 +7,19 @@ export default function FileUploader() {
   const [file, setFile] = useRecoilState(fileState);
 
   return (
-    <>
-      <FileForm file={file} onChange={setFile} />
-      {file && <button onClick={() => setFile(null)}>Clear</button>}
-    </>
+    <div className="text-center">
+      <div className="mb-4">
+        <FileForm file={file} onChange={setFile} />
+      </div>
+
+      {file && (
+        <button
+          onClick={() => setFile(null)}
+          className="top-0 right-0 bg-white hover:bg-blue-dark text-black font-bold py-2 px-4 rounded"
+        >
+          Clear
+        </button>
+      )}
+    </div>
   );
 }

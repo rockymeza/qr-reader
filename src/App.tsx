@@ -5,8 +5,10 @@ import HomePage from "./pages/HomePage";
 
 export default function App() {
   return (
-    <RecoilRoot>
-      <HomePage />
-    </RecoilRoot>
+    <div className="p-4">
+      <RecoilRoot>
+        <HomePage />
+      </RecoilRoot>
+    </div>
   );
 }

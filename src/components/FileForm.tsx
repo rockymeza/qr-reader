@@ -15,7 +15,7 @@ export default function FileForm({ file, onChange }: Props) {
   };
 
   return (
-    <label>
+    <label className="cursor-pointer">
       Click to select some files...
       <input
         style={{ display: "none" }}

@@ -19,5 +19,5 @@ export default function QRValue() {
     }
   }
 
-  return <>{content}</>;
+  return <div className="text-center">{content}</div>;
 }
